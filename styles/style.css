@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  background-image: url(../images/hero-bg.png);
+  background-repeat: no-repeat;
+  font-family: var(--main-family);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: center;
+  position: relative;
+}
+
+.menu {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style-type: none;
+}
+
+.navbar a {
+  color: var(--main-color);
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: var(--nav-size);
+}
+
+.navbar a:hover {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.search input {
+  background-color: transparent;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+  color: var(--white-color);
+}
+
+.hero .wrapper {
+  margin-top: 145px;
+  display: flex;
+}
+
+.wrapper__left {
+  max-width: 530px;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: var(--headers-family);
+  line-height: 84px;
+  color: var(--white-color);
+  letter-spacing: var(--main-spacing);
+}
+
+.wrapper__left p {
+  font-size: var(--main-size);
+  color: var(--main-color);
+  line-height: 39px;
+  letter-spacing: var(--main-spacing);
+  margin-top: 24px;
+}
+
+.action-btn {
+  width: 200px;
+  height: 60px;
+  border-radius: 4px;
+  border: none;
+  font-family: var(--main-family);
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  font-size: var(--main-size);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.wrapper__left .action-btn {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper__left .action-btn img {
+  margin-left: 8px;
+}
+
+.wrapper__right {
+  width: 100%;
+  position: relative;
+}
+
+.wrapper__right img:first-child {
+  position: absolute;
+  top: -100px;
+  right: -80px;
+}
+
+.right__icons {
+  position: absolute;
+}
+
+#vector-1 {
+  top: 0;
+  left: 20px;
+}
+
+#vector-2 {
+  top: -25px;
+  right: 0;
+}
+#vector-3 {
+  bottom: -55px;
+  left: -10px;
+}
+
+#vector-4 {
+  bottom: -25px;
+  right: -20px;
+}
+
+.services {
+  margin-top: 220px;
+}
+
+.services-title {
+  font-size: var(--section-title-size);
+  color: white;
+}
+
+.services .services-title {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.services-list {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 120px;
+}
+
+.services-list__item {
+  max-width: 300px;
+  text-align: center;
+  margin: 0 40px;
+}
+
+.item__title {
+  font-size: var(--services-title-size);
+  font-weight: 600;
+  line-height: 38px;
+  color: var(--white-color);
+  letter-spacing: -0.75px;
+}
+
+.item__description {
+  color: var(--main-color);
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  margin-top: 10px;
+}
+
+.portfolio {
+  margin-top: 80px;
+}
+
+.section-title {
+  font-size: var(--section-title-size);
+  color: var(--white-color);
+  font-family: var(--main-family);
+}
+
+.portfolio-list {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfilio-list__item-second {
+  margin-top: 50px;
+}
+
+.portfilio-list__item-third {
+  margin-top: 100px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 80px;
+}
+
+.dots__item {
+  width: 8px;
+  height: 8px;
+  background-color: var(--dot-black);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots .active {
+  width: 16px;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+}
+
+.arrows {
+  display: none;
+  justify-content: center;
+  gap: 12px;
+}
+
+.arrows .active {
+  background-color: var(--secondary-color);
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-us {
+  margin-top: 100px;
+}
+
+.contact-us .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-us .section-title {
+  max-width: 800px;
+}
+
+.site-data {
+  color: var(--main-color);
+}
+
+footer {
+  margin: 100px 0 30px;
+}
+
+.test {
+  position: absolute;
+  width: 90%;
+  margin: 10px auto;
+  right: 0;
+  left: 0;
+  border-radius: 15px;
+  top: 20px;
+  overflow: hidden;
+  height: 0;
+  transition: 0.4s;
+}
+
+.test ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
